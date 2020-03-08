@@ -1,7 +1,5 @@
-package FunctionalInterface;
+package functionalInterface;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
