@@ -25,7 +25,7 @@ public class _Function {
         /*
         * BiFunction is also a Functional Interface
         */
-        int incrementAndMultiplyByNumber = incrementByOneAndMultiplyByTenFunction.apply(1,100);
+        int incrementAndMultiplyByNumber = incrementByOneAndMultiplyByTenBiFunction.apply(1,100);
         System.out.println(incrementAndMultiplyByNumber);
     }
 
@@ -35,7 +35,7 @@ public class _Function {
 
     static Function<Integer, Integer> multiplyByTenFunction = number -> number * 10;
 
-    static BiFunction<Integer, Integer, Integer> incrementByOneAndMultiplyByTenFunction = (numToAdd, numToMultiply) -> (numToAdd + 1) * numToMultiply;
+    static BiFunction<Integer, Integer, Integer> incrementByOneAndMultiplyByTenBiFunction = (numToAdd, numToMultiply) -> (numToAdd + 1) * numToMultiply;
 
     static int incrementByOne(int number) {
         return number + 1;
